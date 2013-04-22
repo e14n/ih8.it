@@ -40,20 +40,23 @@ var fs = require("fs"),
         address: "localhost",
         hostname: "localhost",
         driver: "disk",
-        name: "ih8.it",
-        description: "Widget for hating things on the federated social web.",
-        verb: "dislike"
+        name: "hip2.it",
+        description: "Widget for liking and sharing things on the fedsocweb.",
+        verb: "like"
     },
     log,
     logParams = {
-        name: "ih8.it",
+        name: "hip2.it",
         serializers: {
             req: Logger.stdSerializers.req,
             res: Logger.stdSerializers.res
         }
     };
 
-if (fs.existsSync("/etc/ih8.it.json")) {
+if (fs.existsSync("/etc/hip2.it.json")) {
+    config = _.defaults(JSON.parse(fs.readFileSync("/etc/hip2.it.json")),
+                        defaults);
+} else if (fs.existsSync("/etc/ih8.it.json")) {
     config = _.defaults(JSON.parse(fs.readFileSync("/etc/ih8.it.json")),
                         defaults);
 } else {
@@ -170,7 +173,7 @@ async.waterfall([
         log.info("Configuring app");
 
         app.configure(function(){
-            var serverVersion = 'ih8.it/'+ih8it.version + ' express/'+express.version + ' node.js/'+process.version,
+            var serverVersion = 'hip2.it/'+ih8it.version + ' express/'+express.version + ' node.js/'+process.version,
                 versionStamp = function(req, res, next) {
                     res.setHeader('Server', serverVersion);
                     next();
