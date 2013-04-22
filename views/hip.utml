@@ -9,10 +9,10 @@
     <% } %>
   </div>
   <div class="span12">
-    <form action="/h8" method="post">
+    <form action="/hip" method="post">
       <input type="hidden" name="url" value="<%- aobj.url %>">
       <input type="hidden" name="src" value="<%- src %>">
-      <button class="btn btn-xxlarge" type="submit">h8!</button>
+      <button class="btn btn-xxlarge" type="submit">I&apos;m hip!</button>
     </form>
   </div>
 </div>

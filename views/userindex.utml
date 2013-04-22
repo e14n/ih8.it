@@ -3,17 +3,17 @@
   <h1><%- user.name %> <small><%- user.id %></small></h1>
 
   <div class="span12">
-    <h2>h8 button</h2>
+    <h2>hip button</h2>
 
-    <p>Drag this bookmarklet button to your bookmarks toolbar to h8 things as you roam around the web.</p>
+    <p>Drag this bookmarklet button to your bookmarks toolbar to show you are hip to things as you roam around the web.</p>
 
-    <p><a class="btn" href="javascript:document.location='https://ih8.it/h8?src=button&url='+encodeURIComponent(document.location);">h8 it</a></p>
+    <p><a class="btn" href="javascript:document.location='https://hip2.it/hip?src=button&url='+encodeURIComponent(document.location);">too hip</a></p>
 
   </div>
 
   <div class="span12">
-    <h2>h8 form</h2>
-    <form class="form-inline" action="/h8" method="get">
+    <h2>hip form</h2>
+    <form class="form-inline" action="/hip" method="get">
       <label class="control-label" for="url">URL</label>
       <div class="input-append">
         <input class="span6 input-xxlarge"  id="url" name="url" type="text">

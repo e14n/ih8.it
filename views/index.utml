@@ -4,17 +4,17 @@
 
       <div class="span6">
 
-        <h1>ih8.it</h1>
+        <h1>hip2.it</h1>
 
-        <p>h8rz gonna h8.</p>
+        <p>Are you hip to it?</p>
 
-        <p><a class="btn btn-primary" href="/login">Start h8in&apos; &raquo;</a></p>
+        <p><a class="btn btn-primary" href="/login">Get hip &raquo;</a></p>
 
       </div>
       
       <div class="span4">
 
-        <img src="/images/Symbol_thumbs_down.svg" width="371" height="480" class="img-rounded">
+        <img src="/images/Symbol_thumbs_up.svg" width="371" height="480" class="img-rounded">
 
       </div>
 

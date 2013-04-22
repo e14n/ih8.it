@@ -200,7 +200,7 @@ exports.showH8 = function(req, res, next) {
         if (err) {
             next(err);
         } else {
-            res.render("h8", {title: "h8 this", url: url, src: src, aobj: aobj});
+            res.render("hip", {title: "too hip", url: url, src: src, aobj: aobj});
         }
     });
 };
