@@ -216,9 +216,12 @@ exports.doH8 = function(req, res, next) {
             ActivityObject.ensure(url, callback);
         },
         function(aobj, callback) {
-            var now = new Date();
+            var now = new Date(),
+                title = aobj.displayName || "a(n) " + aobj.objectType,
+                content = "<a href='"+user.homepage+"'>"+user.name+"</a> is hip to <a href='"+aobj.url+"'>"+title+"</a>";
             user.postActivity({
                 verb: req.app.config.verb,
+                content: content,
                 object: aobj,
                 published: now.toISOString()
             }, callback);
