@@ -17,7 +17,7 @@
       <label class="control-label" for="url">URL</label>
       <div class="input-append">
         <input class="span6 input-xxlarge"  id="url" name="url" type="text">
-        <button class="btn btn-xxlarge" type="submit">h8!</button>
+        <button class="btn btn-xxlarge" type="submit">hip!</button>
       </div>
     </form>
   </div>
