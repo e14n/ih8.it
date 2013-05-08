@@ -249,7 +249,11 @@ async.waterfall([
                     }
                 ], function(err, results) {
                     var rm, user;
-                    if (err) {
+                    if (err && err.name == "NoSuchThingError") {
+                        // Clear the cookie and continue
+                        res.clearCookie("rememberme", {path: "/"});
+                        next();
+                    } else if (err) {
                         next(err);
                     } else {
 
